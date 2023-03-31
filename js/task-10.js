@@ -25,5 +25,8 @@ const createBoxes = (amount) => {
   boxesContainer.append(...markup);
 };
 createBtn.addEventListener("click", createBoxes);
-const destroyBoxes = () => (boxesContainer.innerHTML = "");
+const destroyBoxes = () => {
+  boxesContainer.innerHTML = "";
+  height = 30;
+  width = 30;};
 destroyBtn.addEventListener("click", destroyBoxes);
